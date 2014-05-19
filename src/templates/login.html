@@ -1,0 +1,14 @@
+<html>
+<!-- This is an example of a static form template.-->
+<head>
+	<title>Login</title>
+	<!-- This is an example of how to load a javascript function within flask. -->
+	<script type="text/javascript" src="{{url_for('static', filename='alert.js')}}"></script>
+</head>
+<body onload="alert_me()">
+	<form method="post" action="/login">
+		<input type="text" name="userName" />
+		<input type="submit" name="Login" />
+	</form>
+</body>
+</html>
